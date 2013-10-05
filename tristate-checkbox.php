@@ -45,9 +45,6 @@
 			var indeterminate_opts = [];
 
 			$("input[type=checkbox]").each(function() {
-			
-			alert($(this).data('checked')+ "---"+$(this).prop('checked')+"---"+$(this).prop('indeterminate'));
-			
 				if($(this).data('checked') == 2){
 					checked_opts.push($(this).val());
 				}else if($(this).data('checked') == 1){
@@ -69,7 +66,9 @@
 		<form name="input" action="" method="POST">
 			<input class='indeterminate' type="checkbox" name="opt1" value="option 1" >option 1<br>
 			<input class='indeterminate' type="checkbox" name="opt2" value="option 2" >option 2<br>
-			<input class='indeterminate' type="checkbox" name="opt3" value="option 3" >option 3<br><br>
+			<input class='indeterminate' type="checkbox" name="opt3" value="option 3" >option 3<br>
+			<input class='indeterminate' type="checkbox" name="opt4" value="option 4" >option 4<br>
+			<input class='indeterminate' type="checkbox" name="opt5" value="option 5" >option 5<br><br>
 			<input type="submit" value="Submit" onclick="submittristateform()">
 		</form> 
 	</body>
